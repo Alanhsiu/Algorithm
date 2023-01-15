@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/alanhsiu/Documents/alanhsiu/Alg/pa2_test'
+g++ -c -O2 src/CellLegalization.cpp -Ilib -o main_opt.o
+g++ -O2  main_opt.o -ltm_usage -Llib -o bin/cl
+echo -n ""
+make: Leaving directory `/Users/alanhsiu/Documents/alanhsiu/Alg/pa2_test'
+ 

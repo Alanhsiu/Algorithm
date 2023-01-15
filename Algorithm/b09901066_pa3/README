@@ -1,0 +1,3 @@
+HOW TO RUN:
+make
+./bin/cb inputs/<input file name> outputs/<output file name>

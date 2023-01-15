@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/alanhsiu/Documents/alanhsiu/Alg/PA1'
+g++ -c -O2 src/sort_tool.cpp -o sort_tool_opt.o
+g++ -c src/main.cpp -Ilib -o main_opt.o
+g++ -c lib/tm_usage.cpp
+ar rcv lib/libtm_usage.a tm_usage.o
+g++ -O2 sort_tool_opt.o main_opt.o -ltm_usage -Llib -o bin/NTU_sort
+echo -n ""
+make: Leaving directory `/Users/alanhsiu/Documents/alanhsiu/Alg/PA1'
+ 

@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/alanhsiu/Documents/ee/Alg/b09901066_pa3'
+g++ -c src/main.cpp -Ilib -o main_opt.o
+g++ -c lib/tm_usage.cpp
+ar rcv lib/libtm_usage.a tm_usage.o
+g++ -O3  main_opt.o -ltm_usage -Llib -o bin/cb
+echo -n ""
+make: Leaving directory `/Users/alanhsiu/Documents/ee/Alg/b09901066_pa3'
+ 
